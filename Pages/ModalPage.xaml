@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui_navigation.Pages.ModalPage"
+             Title="ModalPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            FontSize="50"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button
+            HeightRequest="50"
+            Text="Close Modal"
+            x:Name="btnGotoModalPage"
+            Clicked="btnGotoModalPage_Clicked"
+            />
+    </VerticalStackLayout>
+</ContentPage>

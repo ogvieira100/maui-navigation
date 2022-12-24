@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui_navigation.Pages.Page2"
+             Title="Page2">
+    <VerticalStackLayout>
+        <Entry 
+            x:Name="txtName"
+                Placeholder="Name"
+            Text="{Binding Name}"
+            VerticalOptions="Center" 
+            FontSize="50"
+            HorizontalOptions="Center" />
+        <Entry 
+            x:Name="txtAddress"
+                Placeholder="Address"
+            Text="{Binding Address}"
+            VerticalOptions="Center" 
+            FontSize="50"
+            HorizontalOptions="Center" />
+        <Entry 
+            x:Name="txtCity"
+                Placeholder="City"
+            Text="{Binding City}"
+            VerticalOptions="Center" 
+            FontSize="50"
+            HorizontalOptions="Center" />
+        <Button
+            HeightRequest="50"
+            Text="Go to Page3"
+            x:Name="btnGotoPage3"
+            Clicked="btnGotoPage3_Clicked"
+            />
+        <Button
+            HeightRequest="50"
+            Text="Go to Page1"
+            x:Name="btnGotoPage1"
+            Clicked="btnGotoPage1_Clicked"
+            />
+    </VerticalStackLayout>
+</ContentPage>
